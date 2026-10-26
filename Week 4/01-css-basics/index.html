@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Basics</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Internal CSS -->
+  <style>
+    h2 {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to CSS!</h1>
+  <h2>Three Ways to Use CSS</h2>
+  <p>This paragraph uses external CSS.</p>
+  <!-- Inline CSS -->
+  <p style="color: red; background-color: yellow;">This paragraph uses inline CSS.</p>
+  <h2>CSS Selectors</h2>
+  <p>Element selector example.</p>
+  <p class="highlight">Class selector example.</p>
+  <p id="special">ID selector example.</p>
+  <div class="container">
+    <p>Paragraph inside a div (descendant selector).</p>
+    <span>Span inside a div.</span>
+    <div>
+      <p>Nested paragraph (descendant, but not direct child).</p>
+    </div>
+  </div>
+  <ul class="direct-children">
+    <li>Direct child list item</li>
+    <li>Another direct child</li>
+  </ul>
+  <p><a href="https://example.com" target="_blank" rel="noopener noreferrer">Attribute selector: external link</a></p>
+  <h2>Specificity</h2>
+  <p class="important" id="unique">Which color will this paragraph be?</p>
+  <h2>Inheritance</h2>
+  <div class="parent">This text is inside a parent div.
+    <p>This paragraph inherits the text color.</p>
+  </div>
+  <h2>CSS Variables and Pseudo-classes</h2>
+  <button class="button">Hover Over Me</button>
+  <p class="first-letter-demo">The first letter is styled with a pseudo-element.</p>
+</body>
+
+</html>

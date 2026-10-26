@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.item {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Horizontal Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+/* Center horizontally and vertically */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: lightyellow;
+}
+
+/* Vertical Flexbox */
+.column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Wrapping */
+.wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 300px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* Three-column Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    background-color: lightgray;
+    padding: 20px;
+}

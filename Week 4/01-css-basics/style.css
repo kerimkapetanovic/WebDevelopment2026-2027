@@ -1,0 +1,84 @@
+/* CSS variables */
+:root {
+    --primary-color: navy;
+    --accent-color: orange;
+}
+
+/* Element selector */
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* ID selector */
+#special {
+    color: green;
+    font-weight: bold;
+}
+
+
+
+/* Descendant selector */
+.container p {
+    color: blue;
+}
+
+/* Child selector: only direct li children */
+.direct-children>li {
+    color: teal;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+    font-weight: bold;
+}
+
+/* Specificity: ID overrides class */
+.important {
+    color: green;
+}
+
+#unique {
+    color: purple;
+}
+
+/* Inheritance */
+.parent {
+    color: brown;
+}
+
+/* Variable and pseudo-class */
+.button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+/* Pseudo-element */
+.first-letter-demo::first-letter {
+    font-size: 2em;
+    color: crimson;
+}
