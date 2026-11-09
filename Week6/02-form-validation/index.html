@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example 2 - Registration Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Example 2 - Registration Form Validation</h1>
+    <form id="registration" novalidate>
+        <div><input id="name" placeholder="Name"></div>
+        <div><input id="email" type="email" placeholder="Email"></div>
+        <div><input id="password" type="password" placeholder="Password"></div><button type="submit">Register</button>
+    </form>
+    <p id="message" class="result"> This text will be updated based on validation results.</p>
+    <button id="toggleMessage" type="button">Show / Hide Message</button>
+    <p>Tip: Try changing <code>display: none</code> to <code>visibility: hidden</code> in JavaScript.</p>
+</body>
+
+</html>
