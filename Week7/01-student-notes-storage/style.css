@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 560px;
+    margin: 0 auto;
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(15, 23, 42, .08);
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0 0 24px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin: 14px 0 7px;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 11px 16px;
+    border: 0;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+button:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+}
+
+fieldset {
+    margin-top: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+fieldset .check {
+    margin: 8px 0;
+}
+
+.error {
+    color: #b91c1c;
+}
+
+.success {
+    color: #15803d;
+}
+
+#productList {
+    padding-left: 24px;
+}
+
+#productList li {
+    padding: 6px 0;
+}

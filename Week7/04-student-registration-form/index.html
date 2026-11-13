@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Student Registration Form</h1>
+        <form id="registrationForm" novalidate><label for="name">Full name</label><input id="name" type="text"
+                placeholder="Your name"><label for="email">Email</label><input id="email" type="email"
+                placeholder="you@example.com"><label for="password">Password</label><input id="password" type="password"
+                placeholder="At least 6 characters"><label class="check"><input id="showPassword" type="checkbox"> Show
+                password</label><label for="course">Course</label><select id="course">
+                <option value="">Choose a course</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+            <fieldset>
+                <legend>Study mode</legend><label class="check"><input type="radio" name="mode" value="Online" checked>
+                    Online</label><label class="check"><input type="radio" name="mode" value="In Person"> In
+                    Person</label>
+            </fieldset><label class="check"><input id="terms" type="checkbox"> I accept the terms</label><button
+                id="submitBtn" type="submit" disabled>Register</button>
+            <p id="error" class="error" aria-live="polite"></p>
+            <p id="result" class="success" aria-live="polite"></p>
+        </form>
+    </main>
+</body>
+
+</html>

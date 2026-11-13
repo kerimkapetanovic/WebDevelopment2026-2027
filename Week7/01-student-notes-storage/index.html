@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Notes Storage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Student Notes Storage</h1>
+        <label for="note">Your note</label><textarea id="note" rows="5" placeholder="Write a note..."></textarea><label
+            for="storageType">Storage type</label><select id="storageType">
+            <option value="local">Local Storage</option>
+            <option value="session">Session Storage</option>
+        </select>
+        <div class="actions"><button id="saveBtn">Save Note</button><button id="loadBtn">Load Note</button><button
+                id="deleteBtn">Delete Note</button></div>
+        <p id="message" aria-live="polite"></p>
+    </main>
+</body>
+
+</html>
